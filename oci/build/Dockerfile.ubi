@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=redhat/ubi9:latest@sha256:9e6e193bfc3596a84d2a32f42d6b1552398ec9735b9a4e893a0fc3c6fbccb381
+ARG BASE_IMAGE=redhat/ubi9:latest@sha256:1b99266db480e8aa6dfda6900697a07ec99334095b4f87d1687edfc06c965132
 FROM ${BASE_IMAGE}
 
 RUN dnf update -y && \
