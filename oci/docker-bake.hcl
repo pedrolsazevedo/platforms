@@ -52,7 +52,7 @@ target "oraclelinux" {
   dockerfile = "build/Dockerfile.ubi"
   tags       = ["${DOCKER_USER}/oraclelinux:${VERSION}", "${DOCKER_USER}/oraclelinux:latest"]
   args = {
-    BASE_IMAGE = "oraclelinux:10@sha256:b9b48013228f3ddf52f633abaef184e3fdd73333a9b83a23a42fe00ee275c4d3"
+    BASE_IMAGE = "oraclelinux:10@sha256:2f145af52abf6ee5be815b35751c65dc1531a4c709904c4fd7f72b23fdbc5015"
   }
 }
 
