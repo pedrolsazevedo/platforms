@@ -6,7 +6,7 @@
 mise_version: latest
 terraform_version: latest
 pyenv_python_version: "3.14.6"
-nvm_version: v0.40.4
+nvm_version: v0.40.7
 node_versions:
   - "24.16.0"
   - "20.20.1"
