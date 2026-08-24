@@ -14,7 +14,7 @@ node_versions:
 # Container Tools
 kubectl_version: "v1.36.4"
 kind_version: "v0.32.0"
-rancher_desktop_version: "1.22.0"
+rancher_desktop_version: "1.24.0"
 
 # System packages (used by system_prep role)
 system_packages:
