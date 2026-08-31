@@ -1,4 +1,4 @@
-FROM opensuse/tumbleweed:latest@sha256:c676589887bd2b33dd82a54c88b1721abf144adabdb2124b03ba606998310969
+FROM opensuse/tumbleweed:latest@sha256:77ab0329be4c9e9952ec0d63192a52b2b1d5ff6367cbc44fcb0cf8df2596695c
 
 RUN zypper refresh && zypper update -y && \
     zypper install -y \
