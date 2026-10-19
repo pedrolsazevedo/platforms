@@ -43,7 +43,7 @@ target "node" {
   dockerfile = "build/Dockerfile.alpine"
   tags       = ["${DOCKER_USER}/node:${VERSION}", "${DOCKER_USER}/node:latest"]
   args = {
-    BASE_IMAGE = "node:alpine@sha256:aadf416b2cdce311a8811ba3f0608a61b77dbf997500e2eafe781b51f6a0b019"
+    BASE_IMAGE = "node:alpine@sha256:6f08a523443ddedf52941874c203475b0ad503e859ad70cb26ab8be9a517dbd5"
   }
 }
 
