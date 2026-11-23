@@ -164,7 +164,27 @@ class WorkstationManager:
 
         self.print_msg(f"\n==> Running installation... 🚀", Colors.GREEN)
         self.run_command(cmd)
+        self.configure_git()
         self.print_msg("\n✓ Installation complete!", Colors.GREEN)
+
+    def configure_git(self):
+        """Prompt for global Git identity, setting each value only if unset."""
+        self.print_msg("==> Configuring Git identity...", Colors.BLUE)
+        prompts = {
+            "user.name": "Enter your Git name: ",
+            "user.email": "Enter your Git email: ",
+        }
+        for key, prompt in prompts.items():
+            current = subprocess.run(
+                ["git", "config", "--global", key],
+                capture_output=True, text=True
+            ).stdout.strip()
+            if current:
+                self.print_msg(f"✓ Git {key} already set: {current}", Colors.GREEN)
+                continue
+            value = input(prompt).strip()
+            if value:
+                self.run_command(["git", "config", "--global", key, value])
 
     def list_roles(self):
         """List available roles."""
