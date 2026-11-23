@@ -1,3 +1,9 @@
+## 0.5.0 (2026-11-23)
+
+### Feat
+
+- interactive Git identity prompt in setup
+
 ## 0.4.0 (2026-04-01)
 
 ### Feat
